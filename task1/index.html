@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:rgba(0,0,0,0.7) url(bg4.webp)center center fixed;
+            background-blend-mode:darken;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .header{
+            padding-left: 20px;
+            display: flex;
+            gap:40%;
+           padding-bottom: 30px;
+        }
+        .header h1{
+            color:white;
+        }
+        nav ul{
+            display: inline;
+        }
+        nav li{
+            display: inline-flex;
+            padding-top: 22px;
+            padding: 25px;
+            color:white;
+        }
+        .home{
+            justify-content: center;
+            padding: 210px;
+            padding-right: 30px;
+        }
+        h1{
+            text-align: center;
+        }
+        .menu{
+            align-items: center;
+            color:white;
+        }
+        .menu .left ul{
+            border:1px solid wheat;
+            border-radius: 5px 10px;
+            border-width: fit-content;
+            justify-content: center;
+            padding:20px;
+            margin:20px;
+            width:400px;
+        }
+        .menu .right{
+            justify-content: right;
+            display: inline-flex;
+        }
+        .menu .left{
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 50px;
+            padding-left: 60px;
+        }
+
+        .menu .left ul {
+            border: 2px solid wheat;
+            border-radius: 5px 10px;
+            padding: 20px;
+            margin: 0;
+            width: 350px; 
+            background: rgba(255, 255, 255, 0.1);
+            list-style: none;
+            border-color: wheat;
+            animation: zoom 8s ease;
+        }
+        @keyframes zoom{
+            0%{transform:scale(0.9);}
+            100%{transform: scale(1);}
+        }
+        .gallary{
+            color:yellow;;
+        }
+        .contact{
+            text-align: center;
+            color:white;
+        }
+        .contact h1{
+            color:yellow;;
+        }
+        strong{
+            color:yellow;
+        }
+        .menu h1{
+            color:yellow;;
+        }
+        .about{
+            text-align: center;
+            color:white;
+        }
+        .about h1{
+            color:yellow;;
+        }
+        .home{
+            color:white;
+        }
+        .header li,a{
+            color:white;
+        }
+        .header li,a:hover{
+            color:yellow;
+            cursor: pointer;
+        }
+        .gallary img{
+            
+            padding-left: 40px;
+        }
+        .about h2{
+            color:yellow;
+        }
+        .menu .left h2{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+<header id="home">
+    <div class="header">
+        <h1><strong>C</strong>hick<strong>E</strong>mpire</h1>
+        <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallary">Gallary</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    <hr>
+    <div class="home" id="home">
+        <h1 style="justify-content: center;">Welcome to <strong>C</strong>hick<strong>E</strong>mpire - The Region of Deliciousness!</h1>
+        <h3 style="text-align: center;">"The Ultimate Destination for Chicken Lovers!”</h3>
+    </div>
+</header>
+    <section class="menu" id="menu">
+        <h1>🍗 ChickEmpire Ultimate Chicken Menu 🍗</h1>
+        <br>
+        <section class="left">
+        <ul>
+            <h2>Signature Fried Chicken</h2>
+            <li>Empire Crispy Chicken (2/4/6 pcs) – ₹129 / ₹249 / ₹369</li>
+            <li>Spicy Hot Wings (6/12/18 pcs) – ₹199 / ₹379 / ₹549</li>
+            <li>Golden Chicken Strips (5/10 pcs) – ₹179 / ₹339</li>
+            <li>Crunchy Chicken Popcorn – ₹149</li>
+            <li>Masala Fried Chicken – ₹269</li>
+            <li>Lemon Pepper Chicken – ₹239</li>
+            <li>Cheese-Stuffed Fried Chicken – ₹259</li>
+            <li>Fiery Spicy Chicken (Extra Hot!) – ₹229</li>
+        </ul>
+        <ul>
+            <h2>Boneless Chicken Specials</h2>
+            <li>Boneless Crispy Chicken Bites – ₹199</li>
+            <li>Dynamite Chicken (Crispy & Tossed in Spicy Sauce) – ₹239</li>
+            <li>Korean BBQ Boneless Chicken – ₹249</li>
+            <li>Sweet & Spicy Sticky Chicken – ₹229</li>
+            <li>Schezwan Spicy Boneless Chicken – ₹269</li>
+            <li>Mango Chili Boneless Chicken – ₹279</li>
+            <li>Peppery Garlic Chicken Bites – ₹259</li>
+            <li>Teriyaki Glazed Chicken Bites – ₹239</li>
+        </ul>
+        <ul>
+            <h2>Saucy & Loaded Chicken</h2>
+            <li>BBQ Glazed Chicken Wings – ₹259</li>
+            <li>Honey Mustard Chicken Wings – ₹249</li>
+            <li>Chili Garlic Tossed Chicken – ₹229</li>
+            <li>Butter Chicken Wings (Indian Style) – ₹269</li>
+            <li>Cheese-Stuffed Fried Chicken – ₹259</li>
+            <li>Tangy Mango Habanero Wings – ₹279</li>
+            <li>Smoky Chipotle Chicken Wings – ₹289</li>
+            <li>Sizzling Thai Basil Chicken – ₹269</li>
+        </ul>
+        <ul>
+            <h2>Chicken Combos & Platters</h2>
+            <li>Empire Feast (Fried & Grilled Chicken Combo) – ₹499</li>
+            <li>Family Bucket (12 pcs Fried Chicken + Sides) – ₹899</li>
+            <li>Party Platter (Wings, Strips, Popcorn, and Fries) – ₹699</li>
+            <li>Chicken Lover’s Bucket (Assorted Chicken Specials) – ₹999</li>
+            <li>Butter Garlic Chicken Bites – ₹219</li>
+            <li>Crispy & Saucy Combo – (6 Fried Chicken + 6 Saucy Wings + Fries ) – ₹899</li>
+            <li>Loaded Chicken Meal – (Grilled Chicken, Chicken Strips, Fries, Drink, and Special Sauce) – ₹1099</li>
+        </ul>
+        <ul>
+            <h2>Grilled & Roasted Chicken</h2>
+            <li>Smoky Grilled Chicken (Half/Full) – ₹249 / ₹449</li>
+            <li>Peri-Peri Grilled Wings – ₹219</li>
+            <li>BBQ Chicken Skewers – ₹199</li>
+            <li>Tandoori Chicken (Half/Full) – ₹269 / ₹499</li>
+            <li>Herb & Garlic Roasted Chicken – ₹239</li>
+            <li>Lemon Herb Roasted Chicken – ₹279</li>
+            <li>Spicy Cajun Grilled Chicken – ₹289</li>
+            <li>Honey Glazed Grilled Chicken – ₹259</li>
+            <li>Peri-Peri Grilled Wings – ₹219</li>
+        </ul>
+        <ul>
+            <h2>ChickEmpire Special Combos</h2>
+            <li>Royal Feast – (4 pcs Fried Chicken + 2 Chicken Strips + Fries + Drink) – ₹499</li>
+            <li>The Empire Bucket – (8 pcs Fried Chicken + 6 Wings + 4 Strips + Dips) – ₹899</li>
+            <li>Spicy Delight Box – (6 Peri-Peri Wings + 2 BBQ Skewers + Fries + Drink) – ₹699</li>
+            <li>Family Chicken Feast – (12 pcs Mixed Chicken + 4 Dips + Large Fries) – ₹1299</li>
+            <li>Chicken Lovers Meal – (Assorted Chicken Specials + Fries + 2 Drinks) – ₹999</li>
+        </ul>
+        </section>
+        <br>
+    </section>
+    <div class="gallary" id="gallary">
+            <h1>Chicken Recipes</h1>
+            <br>
+            
+                <img src="chk1.jpg" width="400px" height="250px">
+                <img src="chk2.jpg" width="400px" height="250px">
+                <img src="chk3.jpg" width="400px" height="250px">
+                <img src="chk4.jpg" width="400px" height="250px">
+                <img src="chk5.jpg" width="400px" height="250px">
+                <img src="chk6.jpg"width="400px" height="250px">
+            
+            <br>
+        </div>
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <h3>At ChickEmpire, we don’t just serve chicken—we create an unforgettable experience of taste, quality, and tradition! 👑 Established with a passion for delivering the finest chicken dishes, our journey began with a simple goal: to bring people together over food that’s crispy, juicy, and bursting with flavor.
+
+            With years of expertise in perfecting our recipes, we have mastered the art of crafting the ultimate fried, grilled, and roasted chicken. Our chefs use time-tested techniques and secret spice blends, ensuring that every bite is a delicious explosion of taste. From golden-crusted fried chicken to spicy wings and signature sauces, we take pride in offering a menu that caters to every chicken lover.
+            
+            At ChickEmpire, quality is our top priority. We source only the freshest ingredients, marinate our chicken to perfection, and cook with love and precision. Whether you’re enjoying a family meal, grabbing a quick bite, or hosting a special occasion, our food is made to satisfy and impress.
+            
+            Over the years, we have built a loyal community of food lovers who trust us for our exceptional taste and customer service. We believe that great food brings people together, and our mission is to serve meals that create memories.
+            
+            Join us at ChickEmpire—where every meal is a royal feast! 🍗🔥</h3>
+            <h2>Our Mission</h2>
+            <h3>To serve exceptional, flavorful, and affordable chicken while maintaining the highest standards of quality, hygiene, and customer satisfaction. We aim to create a warm and welcoming experience where everyone can enjoy fresh, crispy, and mouthwatering chicken delights.</h3>
+            <h2>Our Vision</h2>
+            <h3>To be the leading chicken brand, known for our bold flavors, innovation, and commitment to excellence. We aspire to bring people together over delicious meals, expanding our reach while ensuring every bite is a taste of perfection.
+
+            </h3>
+            <h2>Join Our Journey</h2>
+            <h3>We invite you to experience the magic that happens when passion meets flavor. Whether you’re celebrating a special occasion or simply enjoying a night out, [Restaurant Name] promises an unforgettable dining experience where every detail is designed with you in mind.</h3>
+        </div>
+        <br>
+    <hr>
+    <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <h4>Phone No:1234567899</h4>
+        <h4>Location:Cuddalore</h4>
+        <h4><a href="https://www.facebook.com/yourprofile" target="_blank">FaceBook</a></h4>
+    </div>
+</body>
+</html>
